@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace FizzBuzz_Challenge
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Create a program that divides numbers which can be divided by 3 and 5
+
+            //Created a for loop to count to 100
+            for (int x = 0; x <= 100; x++)
+            {
+                // Created a if statement that accepted the values of x
+                // and created a boolean expression ending with true (0)
+                // if x can be divided by 5 and 3, then print FizzBuzz with spaces for Readability purposes
+               if (x % 5 == 0 && x % 3 == 0)
+                {
+                    Console.WriteLine("\nFizzBuzz\n");
+                }
+                   // Created a else if statement that ended with a boolean expression of 0
+               // if x can be divided by 5, and print Buzz with spaces for Readability purposes
+                else if (x % 5 == 0)
+                {
+                    Console.WriteLine("\nBuzz\n");
+                }
+               // Created a else if statement that ended with a boolean expression of 0
+               // if x can be divided by 3 and print Fizz with spaces for Readability purposes
+                else if (x % 3 == 0)
+                {
+
+                    Console.WriteLine("\nFizz\n");
+                } 
+                   // If x can't be divided by either 3 or 5, the console will say BuzzKill
+                   // I also printed the numbers that wasn't divided by 3 or 5
+                   // without spaces for Readability purposes
+                else
+                {
+                    Console.WriteLine(x);
+                    Console.WriteLine("BuzzKill, the numbers can't be divided by 3, or 5, {0}", x);
+                }
+            }
+        }
+    }
+}
